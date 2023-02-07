@@ -1,5 +1,5 @@
 FROM node:18.13.0-alpine
+ENTRYPOINT [ "/bin/sh", "-c"]
 WORKDIR /repository
 COPY . .
-RUN npm yarn install
-EXPOSE 3000
+RUN yarn install
